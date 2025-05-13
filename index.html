@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Te invitamos a nuestra boda | Boda de Letty & Julio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Great+Vibes&family=Moon+Dance&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Hero section-->
+    <section class="hero">
+      <article class="hero-info">
+        <div class="hero-info_top wrapper-info">
+          <p class="hero-info_text">
+            Y juntos hicimos de un día cualquiera, una fecha para marcar en el
+            calendario
+          </p>
+          <div class="hero-info_title-wrapper">
+            <h1 class="hero-info_title">Letty <span>Julio</span></h1>
+            <span>&</span>
+          </div>
+        </div>
+        <div class="hero-info_bottom wrapper-info">
+          <h2 class="hero-info_date">9 agosto 2025</h2>
+          <p>Desliza</p>
+          <img
+            class="hero-info_arrow"
+            src="/images/arrow_down.svg"
+            alt="Icono con flecha hacia abajo que indica que deslizemos la pagina"
+          />
+        </div>
+      </article>
+    </section>
+
+    <!-- Timeout Section -->
+    <section class="timeout">
+      <header class="timeout_info">
+        <h2 class="timeout_title">¡Unimos nuestras vidas!</h2>
+        <p class="timeout_text">
+          En la sinfonía de nuestra vida, el día de nuestra boda es el acorde
+          más dulce. Te invitamos a ser testigo de nuestro
+          <span>sí acepto...</span>
+        </p>
+      </header>
+      <article class="timeout_photos container">
+        <div class="timeout_counter">
+          <div class="timeout_counter-wrapper">
+            <h3 id="counter-day" class="timeout_counter-number">20</h3>
+            <span class="timeout_counter-letter">D</span>
+          </div>
+          <div class="timeout_counter-wrapper">
+            <h3 id="counter-hour" class="timeout_counter-number">10</h3>
+            <span class="timeout_counter-letter">H</span>
+          </div>
+          <div class="timeout_counter-wrapper">
+            <h3 id="counter-minute" class="timeout_counter-number">20</h3>
+            <span class="timeout_counter-letter">M</span>
+          </div>
+          <div class="timeout_counter-wrapper">
+            <h3 id="counter-second" class="timeout_counter-number">30</h3>
+            <span class="timeout_counter-letter">S</span>
+          </div>
+        </div>
+        <img
+          class="timeout_image-01"
+          src="/images/married_01.jpg"
+          alt="Hombre y mujer juntos chocando sus frentes como una expresion de amor en medio de la celebracion de su boda"
+        />
+        <img
+          class="timeout_image-02"
+          src="/images/married_02.jpg"
+          alt="Hombre y mujer abrazados en su celebracion de bodas muy expresivos y mirandose uno al otro"
+        />
+        <img
+          class="timeout_image-03"
+          src="/images/married_04.png"
+          alt="Hombre colocando el anillo de bodas en el dedo de su esposa en medio de la celebracion de su boda"
+        />
+      </article>
+    </section>
+
+    <!-- Guests Section -->
+    <section class="guests">
+      <div class="guests_background"></div>
+      <article class="guest_card">
+        <div class="guest_card-borders">
+          <h2 class="guest_card-title">¡Te esperamos en nuestra boda!</h2>
+          <h2 class="guest_card-name">Pancho Perez</h2>
+          <p class="guest_card-resume">
+            Cuentas con <strong><em>2 accesos</em></strong> para la ceremonia
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Family section -->
+    <section class="family">
+      <div class="family_background"></div>
+      <h2 class="family_title">Con la bendición de nuestras familias</h2>
+      <div class="family_cards-container">
+        <article class="family_card">
+          <img
+            src="/images/mdi_heart.svg"
+            alt="Corazon elegante de color negro encima del nombre del familiar de los casados"
+            class="family_card-heart"
+          />
+          <h3 class="family_card-title">Padres de la Novia</h3>
+          <p class="family_card-name">Hermilo Hernández Ramírez</p>
+          <p class="family_card-name">Vicenta Fernando González</p>
+        </article>
+
+        <article class="family_card">
+          <img
+            src="/images/mdi_heart.svg"
+            alt="Corazon elegante de color negro encima del nombre del familiar de los casados"
+            class="family_card-heart"
+          />
+          <h3 class="family_card-title">Padres del Novio</h3>
+          <p class="family_card-name">Daniel Jesús Escobar</p>
+          <p class="family_card-name">Alma Rosa Nava Márquez</p>
+        </article>
+
+        <article class="family_card">
+          <img
+            src="/images/mdi_heart.svg"
+            alt="Corazon elegante de color negro encima del nombre del familiar de los casados"
+            class="family_card-heart"
+          />
+          <h3 class="family_card-title">Padrinos de Honor</h3>
+          <p class="family_card-name">Hermilo Hernández Ramírez</p>
+          <p class="family_card-name">Vicenta Fernando González</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Reception section -->
+    <section class="reception">
+      <div class="reception_background"></div>
+
+      <div class="reception_container container">
+        <img
+          src="/images/recepcion.jpg"
+          alt="foto del salon para el evento de la boda"
+          class="reception_image"
+        />
+        <article class="reception_card">
+          <header class="reception_top">
+            <h2 class="reception_title">Recepción</h2>
+            <p class="reception_date">Sábado, 9 de Agosto del 2025</p>
+            <p class="reception_hour">5:00 pm</p>
+          </header>
+          <div class="reception_bottom">
+            <img
+              src="/images/wine_icon.svg"
+              alt=""
+              class="reception_cups-images"
+            />
+            <p class="reception_name">Jardín Secreto Eventos</p>
+            <p class="reception_location">
+              Av. Roció 1308, Col. Riberas del Rio, Guadalupe N.L.
+            </p>
+            <button class="reception_location-button">
+              <img
+                src="/images/location-btn.svg"
+                alt="Simbolo de locacion de mapa para ubicar el lugar"
+                class="location_button-location-img"
+              />
+              <span>Como llegar</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gift section -->
+    <section class="gift">
+      <h2 class="gift_title">
+        Esperamos contar con tu compañía en este momento tan importante
+      </h2>
+      <p class="gift_text">La puntualidad es un regalo muy apreciado</p>
+      <img
+        src="/images/clarity_email-line.svg"
+        alt="Imagen de un sobre de regalo de forma simplificada"
+        class="gift_image"
+      />
+      <p class="gift_text">
+        Tu presencia en nuestra celebración es mas de lo que podríamos pedir, si
+        sientes que quieres dar algo extra aceptamos lluvia de sobres
+      </p>
+    </section>
+
+    <!-- Confirm section -->
+    <section class="confirm">
+      <div class="container">
+        <h2 class="confirm_title">
+          Gracias por ser parte de nuestro día y el comienzo de nuestras vidas
+          juntos
+        </h2>
+        <div class="confirm_image-container">
+          <img src="/images/married_01.jpg" alt="" class="confirm_image" />
+          <img src="/images/married_02.jpg" alt="" class="confirm_image" />
+          <img src="/images/married_03.webp" alt="" class="confirm_image" />
+        </div>
+        <form action="" class="confirm_selection">
+          <h3 class="confirm_form-title">
+            Confirmación de Asistencia
+            <img src="/images/mdi_heart_02.svg" class="confirm_form-image" />
+          </h3>
+          <div class="confirm_form-buttons">
+            <button class="confirm_form-button">
+              <img
+                src="/images/ic_baseline-whatsapp.svg"
+                alt="Icono de whatsapp"
+              />
+              <span>Confirmar con Letty</span>
+            </button>
+            <button class="confirm_form-button">
+              <img
+                src="/images/ic_baseline-whatsapp.svg"
+                alt="Icono de whatsapp"
+              />
+              <span>Confirmar con Julio</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="./animations.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
