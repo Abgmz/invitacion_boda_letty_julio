@@ -25,6 +25,163 @@ body {
   margin-right: auto;
 }
 
+/* Estilos Generales */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #faf5f0;
+  color: #5a4a3a;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  background: #fff9f2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Efecto sobre */
+.envelope-top {
+  height: 20px;
+  background: #d4b483;
+  background: linear-gradient(135deg, #d4b483 0%, #f5e6c8 100%);
+}
+
+.modal-body {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.floral-decoration {
+  width: 100px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.modal h1,
+.modal h2 {
+  font-family: "Playfair Display", serif;
+  color: #8c6e3d;
+}
+
+.modal h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.modal h2 {
+  font-size: 32px;
+  margin: 15px 0;
+  letter-spacing: 1px;
+}
+
+/* Botón Dorado */
+.btn-gold {
+  background: linear-gradient(to right, #c4a56d, #e8d9b5);
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(196, 165, 109, 0.3);
+}
+
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(196, 165, 109, 0.4);
+}
+
+.btn-gold:active {
+  transform: translateY(1px);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+
+.hide-modal {
+  display: none;
+}
+
+/*=== MUSIC BUTTON  ===*/
+.music-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #c4b58d; /* Color dorado típico en bodas */
+  border-radius: 50px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.music-button:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+.pause-icon {
+  display: none; /* Ocultamos el ícono de pausa inicialmente */
+}
+
+/* Cuando la música esté reproduciéndose */
+.music-button.playing .play-icon {
+  display: none;
+}
+
+.music-button.playing .pause-icon {
+  display: inline;
+}
+
 /* ==== HERO SECTION ==== */
 
 .hero {
@@ -457,6 +614,8 @@ body {
 
 .guest_card-resume {
   font-size: 1.4rem;
+  font-family: "Petrona", serif;
+  font-optical-sizing: auto;
 }
 
 .guest_card-resume strong {
@@ -577,6 +736,8 @@ body {
 .family_card-name {
   color: #4a4947;
   font-size: 1.2rem;
+  font-family: "Petrona", serif;
+  font-optical-sizing: auto;
 }
 
 .family_card-name:first-of-type {
@@ -807,6 +968,8 @@ body {
   margin: 0 auto;
   line-height: 1.6;
   color: #4a4947;
+  font-family: "Petrona", serif;
+  font-optical-sizing: auto;
 }
 
 .gift_text:first-of-type {

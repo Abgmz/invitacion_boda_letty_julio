@@ -18,8 +18,60 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Great+Vibes&family=Moon+Dance&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Modal de Bienvenida -->
+    <div id="wedding-modal" class="modal">
+      <div class="modal-content">
+        <div class="envelope-top"></div>
+        <div class="modal-body">
+          <img
+            src="/images/flores.webp"
+            alt="Flores"
+            class="floral-decoration"
+          />
+          <h1 class="wedding-modal_title">¡Bienvenidos!</h1>
+          <p class="wedding-modal_text">Estás invitado a la boda de</p>
+          <h2>Letty & Julio</h2>
+          <button id="enter-site" class="btn-gold">
+            <span>Ingresar</span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Music button -->
+    <button id="music-button" class="music-button">
+      <svg class="play-icon" width="20" height="20" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M8 5v14l11-7z" />
+      </svg>
+      <svg class="pause-icon" width="20" height="20" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+      </svg>
+      <span class="music-text">Música</span>
+    </button>
+
+    <!-- Audio (oculto) -->
+    <audio id="wedding-song" loop>
+      <source
+        src="/media/The Beauty of Love - Aakash Gandhi.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
     <!--Hero section-->
     <section class="hero">
       <article class="hero-info">
@@ -239,6 +291,7 @@
       </div>
     </section>
 
+    <script src="./music_player.js"></script>
     <script src="./animations.js"></script>
     <script type="module" src="main.js"></script>
   </body>

@@ -26,3 +26,12 @@
     secondsEl.textContent = seconds.toString().padStart(2, "0");
   }, 1000);
 })();
+
+(() => {
+  const modalEl = document.getElementById("wedding-modal");
+  const modalBtn = document.getElementById("enter-site");
+
+  modalBtn.addEventListener("click", (ev) => {
+    modalEl.classList.add("hide-modal");
+  });
+})();
