@@ -186,7 +186,7 @@ body {
 
 .hero {
   min-height: 100vh;
-  background: url("./images/hero-image.png");
+  background: url("./images/hero-image-02.jpg");
   background-color: tomato;
   background-repeat: no-repeat;
   background-size: cover;
@@ -561,7 +561,7 @@ body {
   left: 0;
   width: 100%;
   height: 120%; /* Extra para el desplazamiento */
-  background-image: url("/images/married_01.jpg");
+  background-image: url("/images/jyl_04.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* ¡Clave para el efecto! */
