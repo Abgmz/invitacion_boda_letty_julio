@@ -44,7 +44,7 @@ const elementos = [
 elementos.forEach(({ selector, delay, start }) => {
   gsap.from(selector, {
     opacity: 0,
-    y: 8,
+    y: 2,
     duration: 1,
     delay, // Retraso personalizado
     scrollTrigger: {

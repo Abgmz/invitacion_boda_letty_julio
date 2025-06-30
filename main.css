@@ -190,6 +190,7 @@ body {
   background-color: tomato;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
 }
 
@@ -297,6 +298,10 @@ body {
 }
 
 @media screen and (max-width: 430px) {
+  .hero {
+    background-position: 60%;
+  }
+
   .hero-info {
     align-self: flex-end;
     flex-basis: 100%;
@@ -519,7 +524,7 @@ body {
   }
 
   .timeout_photos {
-    grid-template-rows: repeat(2, 116px) 450px 450px;
+    grid-template-rows: 116px repeat(3, 450px);
   }
 
   .timeout_counter {
@@ -644,7 +649,7 @@ body {
   .guests_background {
     background-size: cover;
     background-attachment: initial;
-    background-position: -625px;
+    background-position: 50%;
   }
 }
 
